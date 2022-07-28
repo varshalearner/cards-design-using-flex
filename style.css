@@ -4,7 +4,6 @@ body{
 }
 img{
     width: 250px;
-/*     text-align: center; */
  }
 .cards{
     display :flex;
@@ -12,17 +11,16 @@ img{
     flex-direction: row;
     justify-content: center;   
 }
-.card:hover{
-    box-shadow: 0 2px 4px 0 #000;
-}
 .card{
     width: 250px;
-    box-shadow: 0 2px 4px 0 rgb(157, 147, 130);
-/*     padding:25px; */
+    box-shadow: 0 4px 8px 0 rgb(157, 147, 130);
     margin:20px;
     display: flex;
     flex-direction: column;
     height: 420px;
+}
+.card:hover{
+    box-shadow: 0 4px 8px 0 #000;
 }
 button{
     background-color: rgb(84, 80, 70);
@@ -30,21 +28,20 @@ button{
     color: rgb(224, 222, 222);
     padding: 10px 10px;
     margin: 0 15px 15px 15px;
-/*     width: 80%; */
     font-size: 10px
 }
 .cards > span{
     width: 250px;
     margin:20px;
     } 
+.card > span{
+    flex-grow: 1;
+    width: 250px;
+}
 p,h3{
     flex-shrink: 0;
     flex-basis: 0;
     padding: 0 20px;
-}
-.card > span{
-    flex-grow: 1;
-    width: 250px;
 }
 
 
